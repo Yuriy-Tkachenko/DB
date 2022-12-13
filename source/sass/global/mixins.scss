@@ -1,0 +1,21 @@
+@mixin main-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+@mixin caption {
+  font-size: 24px;
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+@mixin button {
+  padding: 22px 40px;
+  background-color: $light-blue;
+  color: $standart-white;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
