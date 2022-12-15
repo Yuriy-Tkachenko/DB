@@ -1,0 +1,25 @@
+.partners {
+  margin-bottom: 50px;
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.partners__list {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.partners__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,88 @@
+.description {
+  color: $dark-blue;
+  text-align: center;
+
+  @media(min-width: $tablet-width) {
+    line-height: 170%;
+  }
+}
+
+.description--main-offer-decore {
+  @media(min-width: $tablet-width) {
+    color: $standart-white;
+  }
+}
+
+.description--main-offer-position {
+  margin: 0 auto 20px auto;
+  max-width: 322px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 445px;
+    margin-bottom: 24px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.description--content-info-position {
+  max-width: 320px;
+  margin: 0 auto 20px auto;
+
+  @media(min-width: $tablet-width) {
+    text-align: start;
+    max-width: 420px;
+    margin: 0 0 16px 0;
+  }
+}
+
+.description--services-position {
+  margin: 0 auto 16px auto;
+  max-width: 348px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 348px;
+    margin: 0 auto 32px auto;
+  }
+}
+
+.description--benefits-position {
+  margin: 0 auto 16px auto;
+  max-width: 348px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 348px;
+    margin: 0 auto 32px auto;
+  }
+}
+
+.description--portfolio-position {
+  margin: 0 auto 16px auto;
+  max-width: 348px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 300px;
+    margin: 0 auto 32px auto;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 320px;
+  }
+}
+
+.description--portfolio-decore {
+  color: $standart-white;
+}
+
+.description--mailing-decore {
+  color: $standart-white;
+  max-width: 310px;
+  margin: 0 auto 20px auto;
+
+  @media(min-width: $tablet-width) {
+    max-width: 517px;
+    margin-bottom: 32px;
+  }
+}

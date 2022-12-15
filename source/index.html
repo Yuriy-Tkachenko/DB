@@ -20,9 +20,6 @@
             <a class="site-navigation__link" href="about.html">About</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="services.html">Services</a>
-          </li>
-          <li class="site-navigation__item">
             <a class="site-navigation__link" href="gallery.html">Gallery</a>
           </li>
           <li class="site-navigation__item">
@@ -32,14 +29,15 @@
             <a class="site-navigation__link" href="news.html">News</a>
           </li>
         </ul>
+        <button class="site-navigation__button" type="button"></button>
       </nav>
     </div>
   </header>
   <main class="page-content">
     <section class="main-offer">
       <div class="container">
-        <h1 class="title">We build your dream house well and professionally</h1>
-        <p class="description">
+        <h1 class="main-title main-title--main-offer-position main-title--main-offer-decore">We build your dream house well and professionally</h1>
+        <p class="description description--main-offer-position description--main-offer-decore">
           Our team can build a house according to your wishes. 
           Any design and concept, we will help make it happen</p>
         <a class="link" href="/">Contact us</a>
@@ -48,18 +46,22 @@
     <section class="content-info">
       <div class="container">
         <div class="content-info__wrapper">
-          <img class="content-info__image" src="img/company-collage-picture@1x.png" srcset="img/company-collage-picture@2x.png" alt="works photo's" width="640" height="419">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/company-collage-picture@1x.png 1x, img/company-collage-picture@2x.png 2x" width="640" height="419">
+            <source media="(min-width: 768px)" srcset="img/company-collage-picture@1x.png 1x, img/company-collage-picture@2x.png 2x" width="420" height="270">
+            <img class="content-info__image" src="img/company-collage-picture@1x.png" srcset="img/company-collage-picture@2x.png" alt="works photo's" width="330" height="220">
+          </picture>
           <div class="content-info__description-wrapper">
-            <h2 class="main-title">Our company</h2>
-            <p class="description">
+            <h2 class="title">Our company</h2>
+            <p class="description description--content-info-position">
               Debuilds is a team of architects, interior design, and contractors who help our clients not only to build their dream building, 
               but also to feel comfortable after the building is used.
             </p>
             <span class="content-info__subtitle">We already handled</span>
             <ul class="content-info__feature-list">
-              <li class="content-info__feature-title">50+ Clients</li>
-              <li class="content-info__feature-title">30+ House</li>
-              <li class="content-info__feature-title">20+ Building</li>
+              <li class="content-info__feature-item">50+ Clients</li>
+              <li class="content-info__feature-item">30+ House</li>
+              <li class="content-info__feature-item">20+ Building</li>
             </ul>
             <a class="link" href="/">See more</a>
           </div>
@@ -69,9 +71,9 @@
     <section class="services">
       <div class="container">
         <h2 class="title">Our services</h2>
-        <p class="description">Our services include building new buildings and renovating old buildings</p>
+        <p class="description description--services-position">Our services include building new buildings and renovating old buildings</p>
         <ul class="services__list">
-          <li class="services__item">
+          <li class="services__item services__item--decore">
             <img class="services__logo" src="img/ic_baseline-design-services.svg" alt="design logo">
             <h3 class="services__caption">Design building/house</h3>
             <p class="services__description">We have an architect for design new buildings</p>
@@ -97,7 +99,7 @@
     <section class="benefits">
       <div class="container">
         <h2 class="title">Our benefits</h2>
-        <p class="description">Here our benefits if you collaboration with our team</p>
+        <p class="description description--benefits-position">Here our benefits if you collaboration with our team</p>
         <ul class="benefits__list">
           <li class="benefits__item">
             <img class="benefits__logo" src="img/point-logo.svg" alt="point logo">
@@ -119,48 +121,67 @@
     </section>
     <section class="portfolio">
       <div class="container">
-        <h2 class="title">Our works</h2>
-        <p class="description">Here our benefits if you collaboration with our team</p>
+        <h2 class="title title--portfolio-position title--portfolio-decore">Our works</h2>
+        <p class="description description--portfolio-position description--portfolio-decore">Here our some of the best the result when we build some buildings, houses, and also interior designs</p>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <img class="portfolio__photo__house-photo portfolio__photo__house-photo--position" src="img/works-gallery-photo-1@1x.jpg" srcset="img/works-gallery-photo-1@2x.jpg" alt="house" width="200" height="178">
-            <img class="portfolio__photo__entrance-photo portfolio__photo__entrance-photo--position" src="img/works-gallery-photo-2@1x.jpg" srcset="img/works-gallery-photo-2@2x.jpg" alt="entrance in the house" width="200" height="262">
-            <img class="portfolio__photo__facade-photo portfolio__photo__facade-photo--position" src="img/works-gallery-photo-3@1x.jpg" srcset="img/works-gallery-photo-3@2x.jpg" alt="facade of the house" width="200" height="460">
+            <picture class="portfolio__house-photo">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-1@1x.jpg 1x, img/works-gallery-photo-1@2x.jpg 2x" width="200" height="178">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-1@1x.jpg 1x, img/works-gallery-photo-1@2x.jpg 2x" width="172" height="153">
+              <img src="img/works-gallery-photo-1@1x.jpg" srcset="img/works-gallery-photo-1@2x.jpg" alt="house" width="129" height="126">
+            </picture>
+            <picture class="portfolio__entrance-photo">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-2@1x.jpg 1x, img/works-gallery-photo-2@2x.jpg 2x" width="200" height="262">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-2@1x.jpg 1x, img/works-gallery-photo-2@2x.jpg 2x" width="172" height="231">
+              <img src="img/works-gallery-photo-2@1x.jpg" srcset="img/works-gallery-photo-2@2x.jpg" alt="entrance in the house" width="129" height="240">
+            </picture>
+            <picture class="portfolio__facade-photo">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-3@1x.jpg 1x, img/works-gallery-photo-3@2x.jpg 2x" width="200" height="460">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-3@1x.jpg 1x, img/works-gallery-photo-3@2x.jpg 2x" width="172" height="404">
+              <img src="img/works-gallery-photo-3@1x.jpg" srcset="img/works-gallery-photo-3@2x.jpg" alt="facade of the house" width="170" height="386">
+            </picture>
           </li>
           <li class="portfolio__item">
-            <img class="portfolio__photo__swimming-pool portfolio__photo__swimming-pool-photo--position" src="img/works-gallery-photo-4@1x.jpg" srcset="img/works-gallery-photo-4@2x.jpg" alt="swimming pool" width="420" height="277">
-            <img class="portfolio__photo__kitchen-photo portfolio__photo__kitchen-photo--position" src="img/works-gallery-photo-5@1x.jpg" srcset="img/works-gallery-photo-5@2x.jpg" alt="kitchen" width="420" height="163">
+            <picture class="portfolio__swimming-pool-photo">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-4@1x.jpg 1x, img/works-gallery-photo-4@2x.jpg 2x" width="420" height="277">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-4@1x.jpg 1x, img/works-gallery-photo-4@2x.jpg 2x" width="364" height="243">
+              <img src="img/works-gallery-photo-4@1x.jpg" srcset="img/works-gallery-photo-4@2x.jpg" alt="swimming pool" width="320" height="214">
+            </picture>
+            <picture class="portfolio__kitchen-photo">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-5@1x.jpg 1x, img/works-gallery-photo-5@2x.jpg 2x" width="420" height="163">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-5@1x.jpg 1x, img/works-gallery-photo-5@2x.jpg 2x" width="364" height="141">
+              <img src="img/works-gallery-photo-5@1x.jpg" srcset="img/works-gallery-photo-5@2x.jpg" alt="kitchen" width="320" height="124">
+            </picture>
           </li>
           <li class="portfolio__item">
-            <img class="portfolio__photo__interior-photo-1 portfolio__photo__interior-photo-1--position" src="img/works-gallery-photo-6@1x.jpg" srcset="img/works-gallery-photo-6@2x.jpg" alt="living room" width="200" height="256">
-            <img class="portfolio__photo__interior-photo-2 portfolio__photo__interior-photo-2--position" src="img/works-gallery-photo-7@1x.jpg" srcset="img/works-gallery-photo-7@2x.jpg" alt="living room" width="200" height="118">
-            <img class="portfolio__photo__interior-photo-3 portfolio__photo__interior-photo-3--position" src="img/works-gallery-photo-8@1x.jpg" srcset="img/works-gallery-photo-8@2x.jpg" alt="hallway" width="200" height="118">
-            <img class="portfolio__photo__interior-photo-4 portfolio__photo__interior-photo-4--position" src="img/works-gallery-photo-9@1x.jpg" srcset="img/works-gallery-photo-9@2x.jpg" alt="bath" width="420" height="184">
+            <picture class="portfolio__interior-photo-1">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-6@1x.jpg 1x, img/works-gallery-photo-6@2x.jpg 2x" width="200" height="256">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-6@1x.jpg 1x, img/works-gallery-photo-6@2x.jpg 2x" width="172" height="220">
+              <img src="img/works-gallery-photo-6@1x.jpg" srcset="img/works-gallery-photo-6@2x.jpg" alt="living room" width="147" height="188">
+            </picture>
+            <picture class="portfolio__interior-photo-2">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-7@1x.jpg 1x, img/works-gallery-photo-7@2x.jpg" width="200" height="118">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-7@1x.jpg 1x, img/works-gallery-photo-7@2x.jpg" width="172" height="101">
+              <img src="img/works-gallery-photo-7@1x.jpg" srcset="img/works-gallery-photo-7@2x.jpg" alt="living room" width="153" height="87">
+            </picture>
+            <picture class="portfolio__interior-photo-3">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-8@1x.jpg 1x, img/works-gallery-photo-8@2x.jpg 2x" width="200" height="118">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-8@1x.jpg 1x, img/works-gallery-photo-8@2x.jpg 2x" width="172" height="99">
+              <img class="portfolio__photo__interior-photo-3" src="img/works-gallery-photo-8@1x.jpg" srcset="img/works-gallery-photo-8@2x.jpg" alt="hallway" width="153" height="81">
+            </picture>
+            <picture class="portfolio__interior-photo-4">
+              <source media="(min-width: 1200px)" srcset="img/works-gallery-photo-9@1x.jpg 1x, img/works-gallery-photo-9@2x.jpg 2x" width="420" height="184">
+              <source media="(min-width: 768px)" srcset="img/works-gallery-photo-9@1x.jpg 1x, img/works-gallery-photo-9@2x.jpg 2x" width="364" height="164">
+              <img src="img/works-gallery-photo-9@1x.jpg" srcset="img/works-gallery-photo-9@2x.jpg" alt="bath" width="320" height="141">
+            </picture>
           </li>
         </ul>
-        <a class="link" href="">See more</a>
-      </div>
-    </section>
-    <section class="review">
-      <div class="container">
-        <div class="preview">
-          <h2 class="title">What our clients say?</h2>
-          <p class="description">See what our clients say about their new home</p>
-          <a class="link"  href="">See more</a>
-        </div>
-        <div class="review__wrapper">
-          <img class="review__client-photo" src="img/avatar@1x.png" srcset="img/avatar@2x.png" alt="client photo" width="102" height="102">
-          <i class="review__client-description">
-            I really happy to see the result my new home. It’s really good house and good price too. 
-            And they work so fast becasue they have the best team. Once again, thankyou. I really appreciate it.
-          </i>
-          <i class="review__client-signature">- Mr. Roberto</i>
-        </div>
+        <a class="link link--portfolio-position" href="">See more</a>
       </div>
     </section>
     <section class="partners">
       <div class="container">
-        <h2 class="title">Our Partners</h2>
+        <h2 class="title title--partners-position">Our Partners</h2>
         <ul class="partners__list">
           <li class="partners__item">
             <a class="partners__link" href="">
@@ -188,8 +209,8 @@
     <section class="mailing">
       <div class="container">
         <form class="mailing__form" method="post" action="#">
-          <h2 class="main-title">Want to get our offer updates and news?</h2>
-          <p class="description">Submit your e-mail and we will give you update about information and discount. Every single week. (not spamming)</p>
+          <h2 class="main-title main-title--mailing-decore">Want to get our offer updates and news?</h2>
+          <p class="description description--mailing-decore">Submit your e-mail and we will give you update about information and discount. Every single week. (not spamming)</p>
           <div class="mailing__input-wrapper">
             <input class="mailing__input" type="email" placeholder="Enter your e-mail here" required>
             <button class="button" type="button">Submit</button>
@@ -206,16 +227,12 @@
         <a class="link" href="">Get direction</a>
       </div>
       <nav class="site-navigation">
-        <span class="site-logo">DB -</span>
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="">Home</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="about.html">About</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="services.html">Services</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="gallery.html">Gallery</a>

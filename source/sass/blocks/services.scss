@@ -1,0 +1,74 @@
+.services {
+  margin-bottom: 50px;
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.services__item {
+  padding: 20px 20px;
+
+  @media(min-width: $tablet-width) {
+    padding: 20px 20px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 27px 40px 44px;
+  }
+}
+
+.services__item--decore {
+  color: $standart-white;
+  background: url(../../img/services-house-background@1x.jpg);
+  background-size: contain;
+
+  @media(min-resolution: 2dppx) {
+    background: url(../../img/services-house-background@2x.jpg);
+  }
+}
+
+.services__logo {
+  margin: 0 0 16px 0;
+
+  @media(min-width: $tablet-width) {
+    margin: 0 0 23px 0;
+  }
+}
+
+.services__caption {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+
+  @media(min-width: $tablet-width) {
+    margin: 0 0 16px 0;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.services__description {
+  font-size: 14px;
+  margin: 0;
+
+  @media(min-width: $tablet-width) {
+    max-width: 230px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 16px;
+  }
+}

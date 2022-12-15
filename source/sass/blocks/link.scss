@@ -1,0 +1,26 @@
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  text-align: center;
+  color: $standart-white;
+  display: inline-block;
+  background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+  padding: 15px 33px;
+
+  @media(min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 22px 40px;
+  }
+}
+
+.link--portfolio-position {
+  display: block;
+  width: 158px;
+  margin: 0 auto;
+
+  @media(min-width: $desktop-width) {
+    margin: 0 0 0 auto;
+  }
+}

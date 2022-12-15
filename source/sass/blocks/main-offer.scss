@@ -1,0 +1,20 @@
+.main-offer {
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media(min-width: $tablet-width) {
+    background-image: url(../../img/main-background-photo@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -80px 0 50px 0;
+    padding-bottom: 171px;
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../../img/main-background-photo@2x.png);
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}

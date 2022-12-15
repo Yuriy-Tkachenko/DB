@@ -1,0 +1,23 @@
+.title {
+  color: $grey-blue;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+.title--portfolio-decore {
+  color: $standart-white;
+}
+
+.title--portfolio-position {
+  padding-top: 100px;
+
+  @media(min-width: $desktop-width) {
+    padding-top: 173px;
+  }
+}
+
+.title--partners-position {
+  @media(min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}

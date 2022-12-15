@@ -1,0 +1,34 @@
+.mailing {
+  margin-bottom: 50px;
+  background: url(../../img/feedback-background-image@1x.jpg);
+  background-size: cover;
+  padding: 40px 0;
+
+  @media(min-resolution: 2dppx) {
+    background: url(../../img/feedback-background-image@2x.jpg);
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 100px;
+    padding: 55px 0;
+  }
+}
+
+.mailing__form {
+  color: $standart-white;
+}
+
+.main-title {
+}
+
+.description {
+}
+
+.mailing__input-wrapper {
+}
+
+.mailing__input {
+}
+
+.button {
+}

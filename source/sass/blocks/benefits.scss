@@ -1,0 +1,105 @@
+.benefits {
+  margin-bottom: 50px;
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.benefits__list {
+  margin: 0 -5px;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.benefits__item {
+  color: $standart-white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 5;
+  margin: 0 10px;
+  padding: 32px 30px 32px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media(min-width: $tablet-width) {
+    padding: 32px 30px 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 52px 57px 42px;
+  }
+}
+
+.benefits__item {
+  &:nth-child(1) {
+    background-image: url(../../img/benefits-house-background@1x.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../../img/benefits-house-background@2x.jpg);
+    }
+  }
+}
+
+.benefits__item {
+  &:nth-child(2) {
+    background-image: url(../../img/benefits-room-background@1x.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../../img/benefits-room-background@2x.jpg);
+    }
+  }
+}
+
+.benefits__item {
+  &:nth-child(3) {
+    background-image: url(../../img/benefits-city-background@1x.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../../img/benefits-city-background@2x.jpg);
+    }
+  }
+}
+
+.benefits__logo {
+  margin: 0 auto 16px auto;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.benefits__caption {
+  text-align: center;
+  margin: 0 auto 16px auto;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.benefits__description {
+  text-align: center;
+  margin: 0;
+
+  @media(min-width: $tablet-width) {
+    max-width: 306px;
+  }
+}
