@@ -18,3 +18,9 @@
     margin-bottom: 100px;
   }
 }
+
+.main-offer--about-position {
+  @media(min-width: $tablet-width) {
+    padding-bottom: 105px;
+  }
+}

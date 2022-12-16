@@ -12,17 +12,14 @@
 }
 
 .main-title--main-offer-position {
-  max-width: 280px;
   margin: 40px auto 20px auto;
 
   @media(min-width: $tablet-width) {
-    max-width: 500px;
     margin: 0 auto 10px auto;
     padding-top: 140px;
   }
 
   @media(min-width: $desktop-width) {
-    max-width: 740px;
     margin: 0 auto 16px auto;
     padding-top: 191px;
   }
@@ -34,6 +31,10 @@
   @media(min-width: $tablet-width) {
     color: $standart-white;
     max-width: 560px;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 740px;
   }
 }
 
