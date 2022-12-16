@@ -1,0 +1,11 @@
+.button {
+  border: none;
+
+  @media(min-width: $tablet-width) {
+    padding: 17px 40px;
+  }
+}
+
+.button--mailing-position {
+  margin-bottom: 10px;
+}

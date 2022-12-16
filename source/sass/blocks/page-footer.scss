@@ -1,16 +1,48 @@
 .page-footer {
   background-color: $dark-blue;
+  color: $standart-white;
+  padding: 20px 0;
+
+  @media(min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+}
+
+.page-footer .container {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .company-info {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media(min-width: $tablet-width) {
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
+
 .company-info__logo {
+  font-size: 18px;
+  margin-bottom: 16px;
+
+  @media(min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 77px;
+  }
 }
+
 .company-info__description {
+  max-width: 181px;
+  margin: 0 auto 20px auto;
 }
-.link {
-}
+
 .site-navigation {
+  
 }
 .site-logo {
 }
@@ -21,4 +53,5 @@
 .site-navigation__link {
 }
 .design-developer {
+  text-align: center;
 }

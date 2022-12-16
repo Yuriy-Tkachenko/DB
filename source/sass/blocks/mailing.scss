@@ -18,17 +18,24 @@
   color: $standart-white;
 }
 
-.main-title {
-}
-
-.description {
-}
-
 .mailing__input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .mailing__input {
-}
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  border: none;
+  padding: 13px 13px;
+  margin-bottom: 10px;
 
-.button {
+  @media(min-width: $tablet-width) {
+    max-width: 500px;
+    flex-grow: 1;
+    padding: 18px 30px;
+  }
 }
