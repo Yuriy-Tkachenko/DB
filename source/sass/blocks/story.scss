@@ -1,0 +1,41 @@
+.story {
+  margin-bottom: 50px;
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.story .container {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media(min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.story__description {
+  @include text;
+  max-width: 510px;
+}
+
+.story__caption {
+  @include title;
+  color: $grey-blue;
+  text-align: center;
+
+  @media(min-width: $desktop-width) {
+    text-align: start;
+    margin: 24px 0 16px 0;
+  }
+}
+
+.story__text {
+  @media(min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}

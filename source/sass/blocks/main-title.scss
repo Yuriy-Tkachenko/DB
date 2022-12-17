@@ -1,13 +1,9 @@
 .main-title {
-  @include main-title-mobile;
+  @include main-title;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
-    @include main-title-tablet;
-  }
-
-  @media(min-width: $desktop-width) {
-    @include main-title-desktop;
+  @media(max-width: $mobile-width-only) {
+    color: $grey-blue;
   }
 }
 

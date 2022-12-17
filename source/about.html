@@ -41,7 +41,11 @@
     </section>
     <section class="story">
       <div class="container">
-        <img class="story__image" src="img/our-team@1x.png" srcset="img/our-team@2x.png" alt="our team photo" width="640px" height="530px">
+        <picture class="story__image">
+          <source media="(min-width: 1200px)" srcset="img/our-team@1x.png 1x, img/our-team@2x.png 2x" width="640px" height="530px">
+          <source media="(min-width: 768px)" srcset="img/our-team@1x.png 1x, img/our-team@2x.png 2x" width="409px" height="338px">
+          <img src="img/our-team@1x.png" srcset="img/our-team@2x.png" alt="our team photo" width="320px" height="265px">
+        </picture>
         <div class="story__description">
           <h2 class="story__caption">Here were the story begins</h2>
           <p class="story__text">
@@ -67,7 +71,11 @@
             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           </p>
         </div>
-        <img src="img/perfect-drawing@1x.jpg" srcset="img/perfect-drawing@2x.jpg" alt="drawing" width="610px" height="388px">
+        <picture class="work-info__image">
+          <source media="(min-width: 1200px)" srcset="img/perfect-drawing@1x.jpg 1x, img/perfect-drawing@2x.jpg 2x" width="610px" height="388px">
+          <source media="(min-width: 768px)" srcset="img/perfect-drawing@1x.jpg 1x, img/perfect-drawing@2x.jpg 2x" width="409px" height="259px">
+          <img src="img/perfect-drawing@1x.jpg" srcset="img/perfect-drawing@2x.jpg" alt="drawing" width="320px" height="203px">
+        </picture>
       </div>
     </section>
   </main>
