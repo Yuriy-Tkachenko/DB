@@ -17,10 +17,13 @@
             <a class="site-navigation__link" href="index.html">Home</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">About</a>
+            <a class="site-navigation__link" href="about.html">About</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Services</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="contact.html">Contact</a>
@@ -42,42 +45,52 @@
     <section class="services">
       <div class="container">
         <ul class="services__list">
-          <li class="services__item">
+          <li class="services__item services__item--decore">
             <img class="services__logo" src="img/ic_baseline-design-services.svg" alt="design logo">
-            <h3 class="services__item__caption">Design building/house</h3>
-            <p class="services__item__description">We have an architect for design new buildings</p>
+            <h3 class="services__caption">Design building/house</h3>
+            <p class="services__description">We have an architect for design new buildings</p>
           </li>
           <li class="services__item">
             <img class="services__logo" src="img/mdi_sofa.svg" alt="design logo">
-            <h3 class="services__item__caption">Interior Design</h3>
-            <p class="services__item__description">We have an interior designer for design your perfect inside house</p>
+            <h3 class="services__caption">Interior Design</h3>
+            <p class="services__description">We have an interior designer for design your perfect inside house</p>
           </li>
           <li class="services__item">
             <img class="services__logo" src="img/bx_bxs-building-house.svg" alt="design logo">
-            <h3 class="services__item__caption">Build from scratch</h3>
-            <p class="services__item__description">We have an contractor for build new building from scratch</p>
+            <h3 class="services__caption">Build from scratch</h3>
+            <p class="services__description">We have an contractor for build new building from scratch</p>
           </li>
           <li class="services__item">
             <img class="services__logo" src="img/ic_baseline-construction.svg" alt="design logo">
-            <h3 class="services__item__caption">Renovation</h3>
-            <p class="services__item__description">We can also renovate or rebuilds new buildings/house</p>
+            <h3 class="services__caption">Renovation</h3>
+            <p class="services__description">We can also renovate or rebuilds new buildings/house</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="building">
       <div class="container">
-        <img class="building__image"  src="img/building@1x.png" srcset="img/building@2x.png" alt="building drawings image" width="660" height="428">
-        <div class="building__text-wrapper">
-          <h2 class="bulding__title">Design building / house</h2>
-          <p class="bulding__text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <div class="building__content-wrapper">
+          <picture class="building__image building__image--left-position">
+            <source media="(min-width: 1200px)" srcset="img/building@1x.png 1x, img/building@2x.png 2x" width="660" height="428">
+            <img src="img/building@1x.png" srcset="img/building@2x.png" alt="building drawings image" width="384" height="258">
+          </picture>
+          <div class="building__text-wrapper">
+            <h2 class="bulding__title">Design building / house</h2>
+            <p class="bulding__text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="building__text-wrapper">
-          <p class="bulding__text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <div class="building__content-wrapper">
+          <div class="building__text-wrapper">
+            <p class="bulding__text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+          <picture class="building__image building__image--right-position">
+            <source media="(min-width: 1200px)" srcset="img/building-2@1x.png 1x, img/building-2@2x.png 2x" width="660" height="428">
+            <img src="img/building-2@1x.png" srcset="img/building-2@2x.png" alt="building drawings image" width="384" height="258">
+          </picture>
         </div>
-        <img src="img/building-2@1x.png" srcset="img/building-2@2x.png" alt="building drawings image" width="660" height="428">
       </div>
     </section>
   </main>
