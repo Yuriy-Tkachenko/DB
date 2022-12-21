@@ -1,6 +1,7 @@
 .description {
   color: $dark-blue;
   text-align: center;
+  @include text;
 
   @media(min-width: $tablet-width) {
     line-height: 170%;
