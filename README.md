@@ -20,6 +20,7 @@ $ npm start
 ```
 
 ### Contact
-If you like what I do, subcsribe me 
+If you like what I do, subcsribe me  
+
 [![linkedin](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tkachenkoyu/)
 [![twitter](https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=twitter)](https://twitter.com/slogan_here)
