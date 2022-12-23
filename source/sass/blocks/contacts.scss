@@ -1,0 +1,22 @@
+.contacts {
+  margin-bottom: 50px;
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.container__links-wrapper {
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+  gap: 10px;
+
+  @media(min-width: $tablet-width) {
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+  }
+}
+
+.link {
+}
